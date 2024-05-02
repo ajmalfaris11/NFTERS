@@ -122,17 +122,68 @@ header .wrapper{
 }
 
 
+/* ===== Home Section ===== Home Section ===== Home Section ===== */
+
+
+#home{
+	padding: 120px 0;
+}
+
+#home .wrapper{
+	display: flex;
+	justify-content: space-between;
+}
+
+#home .wrapper .left{
+	width: 48%;
+}
+
+#home .wrapper .left h1{
+	font-size: 35px;
+	font-weight: 800;
+	margin-bottom: 32px;
+}
+
+#home .wrapper .left h1:hover{
+	color: #3D00B7;
+}
+
+#home .wrapper .left p{
+	font-size: 18px;
+	font-weight: 400;
+	margin-bottom: 40px;
+	color: rgb(121, 121, 121);
+}
+
+#home .wrapper .left a{
+	background-color:#3D00B7;
+	color: white;
+	padding: 12px 24px;
+	border-radius: 24px;
+}
+
+#home .wrapper .left a:hover{
+
+	background-color:#2b037c;
+}
+
+#home .wrapper .right{
+	width: 48%;
+}
+
+#home .wrapper .right img{
+	width: 100%;
+	display: none;
+}
+
+#smImg{
+	width: 100%;
+}
+
+
 /* ===== MEDIA QUERIES ===== MEDIA QUERIES ===== MEDIA QUERIES =====  */
 
 
-/* Extra Small (XS) - Up to 575.98px */
-
-@media only screen and (max-width: 575.98px) {
-	 #menuBtn {
-		left: 0%;
-	  }
-  }
-  
   /* Small (SM) - 576px and up */
   @media only screen and (min-width: 576px) {
 	
@@ -145,6 +196,13 @@ header .wrapper{
 		display: block;
 	}
 	
+	#smImg{
+		display: none;
+	}
+	#home .wrapper .right img{
+		display: block;
+	}
+
   }
   
   @media only screen and (max-width:768px){
@@ -154,7 +212,60 @@ header .wrapper{
 	#headWrapper h1 img{
 		width: 150px;
 	}
+
+	#home{
+		padding: 30px 0;
+		text-align: center;
+	} 
+
+	#home .wrapper .left{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+	}
+
+	#home .wrapper .right{
+		display: none;
+	}
+	#home .wrapper .left h1{
+		font-size: 50px;
+		margin-bottom: 20px;
+	}
+
+
+	#home .wrapper .left img{
+		width: 75%;
+	}
   }
+
+  @media only screen and (max-width: 575px) {
+	#menuBtn {
+	   left: 0%;
+	 }
+
+	 #home .wrapper .left h1{
+	   font-size: 36px;
+	   margin-bottom: 20px;
+   }
+
+   #home .wrapper .left p{
+	margin-bottom: 14px;
+   }
+ }
+
+ @media only screen and (max-width:375px) {
+	#home .wrapper .left h1{
+		font-size: 28px;
+		margin-bottom: 14px;
+	}
+
+	#home .wrapper .left p{
+		font-size: small;
+		margin-bottom: 10px;
+	}
+ }
 
   @media only screen and (max-width: 900px) {
 	#headWrapper ul li:not(:nth-child(4)):not(:nth-child(5)) {
