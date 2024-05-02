@@ -9,6 +9,10 @@
 	box-sizing: border-box;
 }
 
+body{
+	font-family: "Roboto", sans-serif;   
+}
+
 ol, ul {
 	list-style: none;
 }
@@ -16,3 +20,160 @@ ol, ul {
 a{
     color: black;
 }
+
+
+.wrapper{
+	width: 90%;
+	margin: 0 auto;	
+}
+
+header{
+	border: 1px solid #d8c5fe;
+}
+
+header .wrapper{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+#headWrapper{
+	width: 100%;
+	height: 90px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+}
+
+#headWrapper h1 img{
+	width: 120px;
+}
+
+#headWrapper ul{
+	display: flex;
+	justify-content: end;
+
+}
+
+#headWrapper ul li{
+	margin-right: 32px;
+}
+
+#headWrapper ul li a{
+	font-size: 18px;
+	font-weight: 400;
+
+}
+
+#headWrapper ul li:not(:nth-child(4)):not(:nth-child(5)) a:hover {	text-decoration: underline;
+	color: #3D00B7;
+
+}
+
+#headWrapper ul li:nth-child(4) a{
+	background-color:#3D00B7;
+	border: 1px solid #3D00B7;
+	color: white;
+	padding: 12px 24px;
+	border-radius: 24px;
+	transition: background-color 0.3s ease-in-out;
+
+}
+#headWrapper ul li:nth-child(4) a:hover{
+	background-color: #2b037c;
+	
+}
+#headWrapper ul li:nth-child(5) a{
+	border: 1px solid #3D00B7;
+	padding: 12px 24px;
+	border-radius: 24px;
+	transition: background-color 0.3s ease-in-out;
+
+}
+
+#headWrapper ul li:nth-child(5) a:hover{
+	background-color:#3D00B7;
+	color: white;
+	
+}
+
+#headWrapper ul li:nth-child(4), :nth-child(5){
+	display: none;
+}
+
+#menuBtn{
+	display:none;
+	position: absolute;
+  	top: 50%; 
+  	transform: translateY(-50%); 
+	right:0%;
+	color: #3D00B7;
+	font-weight: 900;
+}
+
+#menuBtn:hover{
+	color: #2b037c;
+}
+
+
+/* ===== MEDIA QUERIES ===== MEDIA QUERIES ===== MEDIA QUERIES =====  */
+
+
+/* Extra Small (XS) - Up to 575.98px */
+
+@media only screen and (max-width: 575.98px) {
+	 #menuBtn {
+		left: 0%;
+	  }
+  }
+  
+  /* Small (SM) - 576px and up */
+  @media only screen and (min-width: 576px) {
+	
+  }
+  
+  /* Medium (MD) - 768px and up */
+  @media only screen and (min-width: 768px) {
+	
+	#headWrapper ul li:nth-child(4), :nth-child(5){
+		display: block;
+	}
+	
+  }
+  
+  @media only screen and (max-width:768px){
+	#headWrapper{
+		justify-content: center;
+	}
+	#headWrapper h1 img{
+		width: 150px;
+	}
+  }
+
+  @media only screen and (max-width: 900px) {
+	#headWrapper ul li:not(:nth-child(4)):not(:nth-child(5)) {
+	  display: none;
+	}
+  
+	 #menuBtn {
+	  display: block;
+	}
+	ul{
+		margin-right: 5%;
+	}
+
+  }
+  
+
+  
+  /* Large (LG) - 992px and up */
+  @media only screen and (min-width: 992px) {
+	/* CSS styles for large screens */
+  }
+  
+  /* Extra Large (XL) - 1200px and up */
+  @media only screen and (min-width: 1200px) {
+	/* CSS styles for extra large screens */
+  }
+  
