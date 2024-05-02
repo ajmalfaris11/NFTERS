@@ -190,11 +190,6 @@ header .wrapper{
 
 /* ===== MEDIA QUERIES ===== MEDIA QUERIES ===== MEDIA QUERIES =====  */
 
-
-  /* Small (SM) - 576px and up */
-  @media only screen and (min-width: 576px) {
-	
-  }
   
   /* Medium (MD) - 768px and up */
   @media only screen and (min-width: 768px) {
@@ -218,6 +213,10 @@ header .wrapper{
 	}
 	#headWrapper h1 img{
 		width: 150px;
+	}
+	#headWrapper h1{
+		margin-left: 24px;
+
 	}
 
 	#home{
@@ -289,14 +288,4 @@ header .wrapper{
   }
   
 
-  
-  /* Large (LG) - 992px and up */
-  @media only screen and (min-width: 992px) {
-	/* CSS styles for large screens */
-  }
-  
-  /* Extra Large (XL) - 1200px and up */
-  @media only screen and (min-width: 1200px) {
-	/* CSS styles for extra large screens */
-  }
   
