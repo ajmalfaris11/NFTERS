@@ -10,7 +10,7 @@
 }
 
 body{
-	font-family: "Roboto", sans-serif;   
+	font-family: "Roboto", sans-serif;  
 }
 
 ol, ul {
@@ -174,7 +174,14 @@ header .wrapper{
 #home .wrapper .right img{
 	width: 100%;
 	display: none;
+	transition:transform 0.5s ease-in-out;
+
 }
+
+#home .wrapper .right img:hover{
+	transform: scale(1.02);
+}
+
 
 #smImg{
 	width: 100%;
@@ -252,6 +259,7 @@ header .wrapper{
 
    #home .wrapper .left p{
 	margin-bottom: 14px;
+	font-size: small;
    }
  }
 
@@ -262,7 +270,6 @@ header .wrapper{
 	}
 
 	#home .wrapper .left p{
-		font-size: small;
 		margin-bottom: 10px;
 	}
  }
