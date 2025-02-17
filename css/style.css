@@ -18,9 +18,6 @@ ul {
 	list-style: none;
 }
 
-a {
-	color: black;
-}
 
 
 .wrapper {
@@ -28,9 +25,7 @@ a {
 	margin: 0 auto;
 }
 
-header {
-	border: 1px solid #d8c5fe;
-}
+
 
 header .wrapper {
 	display: flex;
