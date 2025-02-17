@@ -79,7 +79,7 @@ header .wrapper {
 }
 
 #headWrapper ul li:nth-child(4) a {
-	background-color: #3D00B7;
+	background-color: #976bed;
 	color: white;
 	padding: 12px 50px;
 	border-radius: 24px;
@@ -144,14 +144,17 @@ header .wrapper {
 
 #home .wrapper .left {
 	width: 48%;
-
 }
 
 #home .wrapper .left h1 {
-	font-size: 35px;
-	font-weight: 800;
-	margin-bottom: 32px;
+  font-size: 60px;
+  font-weight: 800;
+  margin-bottom: 32px;
+  background: linear-gradient(90deg, #6f2df4, #49d5ed, #d56bff);
+  background-clip: text;
+  color: transparent;
 }
+
 
 #home .wrapper .left h1:hover {
 	color: #3D00B7;
@@ -161,11 +164,11 @@ header .wrapper {
 	font-size: 18px;
 	font-weight: 400;
 	margin-bottom: 40px;
-	color: rgb(121, 121, 121);
+	color: #44316b;
 }
 
 #home .wrapper .left a {
-	background-color: #3D00B7;
+	background-color: #976bed;
 	color: white;
 	padding: 12px 24px;
 	border-radius: 24px;
