@@ -9,35 +9,36 @@
 	box-sizing: border-box;
 }
 
-body{
-	font-family: "Roboto", sans-serif;  
+body {
+	font-family: "Roboto", sans-serif;
 }
 
-ol, ul {
+ol,
+ul {
 	list-style: none;
 }
 
-a{
-    color: black;
+a {
+	color: black;
 }
 
 
-.wrapper{
+.wrapper {
 	width: 90%;
-	margin: 0 auto;	
+	margin: 0 auto;
 }
 
-header{
+header {
 	border: 1px solid #d8c5fe;
 }
 
-header .wrapper{
+header .wrapper {
 	display: flex;
 	align-items: center;
 	gap: 10px;
 }
 
-#headWrapper{
+#headWrapper {
 	width: 100%;
 	height: 90px;
 	display: flex;
@@ -46,50 +47,52 @@ header .wrapper{
 	position: relative;
 }
 
-#headWrapper h1 img{
+#headWrapper h1 img {
 	width: 120px;
 	transition: transform 0.5s ease-in-out;
 }
 
-#headWrapper h1 img:hover{
+#headWrapper h1 img:hover {
 	transform: scale(1.1);
 }
 
-#headWrapper ul{
+#headWrapper ul {
 	display: flex;
 	justify-content: end;
 
 }
 
-#headWrapper ul li{
+#headWrapper ul li {
 	margin-right: 32px;
 }
 
-#headWrapper ul li a{
+#headWrapper ul li a {
 	font-size: 18px;
 	font-weight: 400;
 
 }
 
-#headWrapper ul li:not(:nth-child(4)):not(:nth-child(5)) a:hover {	text-decoration: underline;
+#headWrapper ul li:not(:nth-child(4)):not(:nth-child(5)) a:hover {
+	text-decoration: underline;
 	color: #3D00B7;
 
 }
 
-#headWrapper ul li:nth-child(4) a{
-	background-color:#3D00B7;
-	border: 1px solid #3D00B7;
+#headWrapper ul li:nth-child(4) a {
+	background-color: #3D00B7;
 	color: white;
-	padding: 12px 24px;
+	padding: 12px 50px;
 	border-radius: 24px;
 	transition: background-color 0.3s ease-in-out;
 
 }
-#headWrapper ul li:nth-child(4) a:hover{
+
+#headWrapper ul li:nth-child(4) a:hover {
 	background-color: #2b037c;
-	
+
 }
-#headWrapper ul li:nth-child(5) a{
+
+#headWrapper ul li:nth-child(5) a {
 	border: 1px solid #3D00B7;
 	padding: 12px 24px;
 	border-radius: 24px;
@@ -97,27 +100,28 @@ header .wrapper{
 
 }
 
-#headWrapper ul li:nth-child(5) a:hover{
-	background-color:#3D00B7;
+#headWrapper ul li:nth-child(5) a:hover {
+	background-color: #3D00B7;
 	color: white;
-	
+
 }
 
-#headWrapper ul li:nth-child(4), :nth-child(5){
+#headWrapper ul li:nth-child(4),
+:nth-child(5) {
 	display: none;
 }
 
-#menuBtn{
-	display:none;
+#menuBtn {
+	display: none;
 	position: absolute;
-  	top: 50%; 
-  	transform: translateY(-50%); 
-	right:0%;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 0%;
 	color: #3D00B7;
 	font-weight: 900;
 }
 
-#menuBtn:hover{
+#menuBtn:hover {
 	color: #2b037c;
 }
 
@@ -125,106 +129,119 @@ header .wrapper{
 /* ===== Home Section ===== Home Section ===== Home Section ===== */
 
 
-#home{
-	padding: 120px 0;
-}
+/* #home{
+	
+} */
 
-#home .wrapper{
+#home .wrapper {
 	display: flex;
 	justify-content: space-between;
+	min-height: 85vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-#home .wrapper .left{
+#home .wrapper .left {
 	width: 48%;
+
 }
 
-#home .wrapper .left h1{
+#home .wrapper .left h1 {
 	font-size: 35px;
 	font-weight: 800;
 	margin-bottom: 32px;
 }
 
-#home .wrapper .left h1:hover{
+#home .wrapper .left h1:hover {
 	color: #3D00B7;
 }
 
-#home .wrapper .left p{
+#home .wrapper .left p {
 	font-size: 18px;
 	font-weight: 400;
 	margin-bottom: 40px;
 	color: rgb(121, 121, 121);
 }
 
-#home .wrapper .left a{
-	background-color:#3D00B7;
+#home .wrapper .left a {
+	background-color: #3D00B7;
 	color: white;
 	padding: 12px 24px;
 	border-radius: 24px;
 }
 
-#home .wrapper .left a:hover{
+#home .wrapper .left a:hover {
 
-	background-color:#2b037c;
+	background-color: #2b037c;
 }
 
-#home .wrapper .right{
-	width: 48%;
+#home .wrapper .right {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: end;
+	align-items: center;
 }
 
-#home .wrapper .right img{
-	width: 100%;
+#home .wrapper .right img {
+	width: 80%;
 	display: none;
-	transition:transform 0.5s ease-in-out;
+	transition: transform 0.5s ease-in-out;
 
 }
 
-#home .wrapper .right img:hover{
+#home .wrapper .right img:hover {
 	transform: scale(1.02);
 }
 
 
-#smImg{
+#smImg {
 	width: 100%;
 }
 
 
 /* ===== MEDIA QUERIES ===== MEDIA QUERIES ===== MEDIA QUERIES =====  */
 
-  
-  /* Medium (MD) - 768px and up */
-  @media only screen and (min-width: 768px) {
-	
-	#headWrapper ul li:nth-child(4), :nth-child(5){
-		display: block;
-	}
-	
-	#smImg{
-		display: none;
-	}
-	#home .wrapper .right img{
+
+/* Medium (MD) - 768px and up */
+@media only screen and (min-width: 768px) {
+
+	#headWrapper ul li:nth-child(4),
+	:nth-child(5) {
 		display: block;
 	}
 
-  }
-  
-  @media only screen and (max-width:768px){
-	#headWrapper{
+	#smImg {
+		display: none;
+	}
+
+	#home .wrapper .right img {
+		display: block;
+	}
+
+}
+
+@media only screen and (max-width:768px) {
+	#headWrapper {
 		justify-content: center;
 	}
-	#headWrapper h1 img{
+
+	#headWrapper h1 img {
 		width: 150px;
 	}
-	#headWrapper h1{
+
+	#headWrapper h1 {
 		margin-left: 24px;
 
 	}
 
-	#home{
+	#home {
 		padding: 30px 0;
 		text-align: center;
-	} 
+	}
 
-	#home .wrapper .left{
+	#home .wrapper .left {
 		width: 100%;
 		display: flex;
 		flex-direction: column;
@@ -232,60 +249,59 @@ header .wrapper{
 		gap: 20px;
 	}
 
-	#home .wrapper .right{
+	#home .wrapper .right {
 		display: none;
 	}
-	#home .wrapper .left h1{
+
+	#home .wrapper .left h1 {
 		font-size: 50px;
 		margin-bottom: 20px;
 	}
 
 
-	#home .wrapper .left img{
+	#home .wrapper .left img {
 		width: 75%;
 	}
-  }
+}
 
-  @media only screen and (max-width: 575px) {
+@media only screen and (max-width: 575px) {
 	#menuBtn {
-	   left: 0%;
-	 }
+		left: 0%;
+	}
 
-	 #home .wrapper .left h1{
-	   font-size: 36px;
-	   margin-bottom: 20px;
-   }
+	#home .wrapper .left h1 {
+		font-size: 36px;
+		margin-bottom: 20px;
+	}
 
-   #home .wrapper .left p{
-	margin-bottom: 14px;
-	font-size: small;
-   }
- }
+	#home .wrapper .left p {
+		margin-bottom: 14px;
+		font-size: small;
+	}
+}
 
- @media only screen and (max-width:375px) {
-	#home .wrapper .left h1{
+@media only screen and (max-width:375px) {
+	#home .wrapper .left h1 {
 		font-size: 28px;
 		margin-bottom: 14px;
 	}
 
-	#home .wrapper .left p{
+	#home .wrapper .left p {
 		margin-bottom: 10px;
 	}
- }
+}
 
-  @media only screen and (max-width: 900px) {
+@media only screen and (max-width: 900px) {
 	#headWrapper ul li:not(:nth-child(4)):not(:nth-child(5)) {
-	  display: none;
+		display: none;
 	}
-  
-	 #menuBtn {
-	  display: block;
+
+	#menuBtn {
+		display: block;
 	}
-	ul{
+
+	ul {
 		margin-right: 5%;
 	}
 
-  }
-  
-
-  
+}
